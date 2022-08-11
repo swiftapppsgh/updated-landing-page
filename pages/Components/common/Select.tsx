@@ -27,7 +27,7 @@ const SelectDropDown = ({ options, selectionColor }: Props) => {
         }}
         className="basic-single"
         classNamePrefix="select"
-        defaultValue={options[0]}
+        defaultValue={options ? options[0] : ''}
         // isLoading={isLoading}
         // isClearable={isClearable}
         // isRtl={isRtl}
