@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer flex flex-col bg-purple py-10 px-10 sm:px-24">
+    <footer className="footer flex flex-col bg-purple py-10 px-10 sm:px-24 md:px-44">
       <Link href="/">
         <a>
           <img

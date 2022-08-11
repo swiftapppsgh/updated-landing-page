@@ -14,7 +14,7 @@ const AddRoute = ({ classname, textColor, selectionColor }: Props) => {
         className={`text-white flex-col w-full text-center md:w-6/12 md:mt-24 ${classname} sm:py-24`}
       >
         <h1
-          className={`text-xl font-extrabold my-10 sm:mt-0 md:text-8xl ${textColor}`}
+          className={`text-xl font-extrabold my-10 sm:mt-0 md:text-8xl text-left ${textColor}`}
         >
           MOVE AROUND THE CITY WITH EASE
         </h1>

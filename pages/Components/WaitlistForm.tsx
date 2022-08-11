@@ -3,7 +3,7 @@ import InputField from "./common/InputField";
 
 const WaitlistForm = () => {
   return (
-    <div className="flex py-44 justify-center items-center p-6 rounded-lg shadow-lg bg-white ">
+    <div className="flex py-44  justify-center items-center p-6 rounded-lg shadow-lg bg-white ">
       <form>
         <InputField onChange={() => {}} placeHolder="First Name" type="text" />
         <InputField

@@ -52,7 +52,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <nav
-      className={` flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center ${
+      className={` flex filter drop-shadow-md bg-white px-4  md:px-44 py-4 h-20 items-center ${
         open && " mb-20 md:mb-0"
       }`}
     >
