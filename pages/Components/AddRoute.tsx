@@ -80,6 +80,8 @@ const AddRoute = ({ classname, textColor, selectionColor }: Props) => {
             buttonText={"Book Trip"}
             buttonColor={"bg-red"}
             textColor="text-white"
+            hover={true}
+            href=""
           />
         </div>
       </div>

@@ -12,16 +12,16 @@ const OurPartners = () => {
         </h1>
         <div className="flex flex-row justify-around items-center mt-24">
           <div className="">
-            <TravelClan />
+            <img src="/travelclan.png" />
           </div>
           <div className="hidden md:block">
-            <Heny />
+            <img src="/heny.png" />
           </div>
           <div className="hidden lg:block">
-            <MainStream />
+            <img src="/mainstream.png" />
           </div>
           <div className="hidden lg:block">
-            <MPharma />
+            <img src="/mpharma.png" />
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Button from "./common/Button";
 
@@ -21,18 +22,26 @@ function MobileNav({ open, setOpen }: any) {
       <div className="flex items-center justify-center filter  bg-white h-20">
         {" "}
         {/*logo container*/}
-        <img src="/logo.png" />
+        <Link href="/">
+          <a>
+            <img src="/logo.png" />
+          </a>
+        </Link>
       </div>
       <div className=" flex-row justify-center flex ">
         <Button
-          buttonText="Download the app"
-          buttonColor={"bg-primary"}
-          textColor={"text-white"}
+          buttonText="Download Our App"
+          buttonColor={"bg-darkblueopacity"}
+          textColor={"text-primary"}
+          hover={false}
+          href=""
         />
         <Button
-          buttonText="Add your van"
+          buttonText="Join Our Waitlist"
           buttonColor={"bg-primary"}
           textColor={"text-white"}
+          hover={false}
+          href="/waitlist"
         />
       </div>
     </div>
@@ -44,12 +53,16 @@ export default function Navbar() {
   return (
     <nav
       className={` flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center ${
-        open && "mb-16 md:mb-0"
+        open && " mb-20 md:mb-0"
       }`}
     >
       <MobileNav open={open} setOpen={setOpen} />
       <div className="w-3/12 flex items-center">
-        <img src="/logo.png" />
+        <Link href="/">
+          <a>
+            <img src="/logo.png" />
+          </a>
+        </Link>
       </div>
       <div className="w-9/12 flex justify-end items-center">
         <div
@@ -79,14 +92,18 @@ export default function Navbar() {
 
         <div className=" flex-row justify-center hidden md:flex">
           <Button
-            buttonText="Download the app"
-            buttonColor={"bg-primary"}
-            textColor={"text-white"}
+            buttonText="Download Our App"
+            buttonColor={"bg-darkblueopacity"}
+            textColor={"text-primary"}
+            hover={false}
+            href=""
           />
           <Button
-            buttonText="Add your van"
+            buttonText="Join Our Waitlist"
             buttonColor={"bg-primary"}
             textColor={"text-white"}
+            hover={false}
+            href="/waitlist"
           />
         </div>
       </div>
