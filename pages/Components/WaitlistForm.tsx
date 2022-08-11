@@ -21,14 +21,14 @@ const WaitlistForm = () => {
           placeHolder="Destination Bus Stop"
           type="text"
         />
-        <div className="mt-10">
-          <Button
-            buttonColor={"bg-primary"}
-            buttonText="SUBSCRIBE"
-            textColor={"text-white"}
-            hover={true}
-            href=""
-          />
+        <div className="mt-10 px-10">
+          <div
+            className={
+              "px-6 py-3 bg-primary justify-center text-center m-4 rounded-lg md:px-16 hover:bg-darkblueopacity hover:text-primary hover:shadow-2xl text-white  hover:cursor-pointer"
+            }
+          >
+            <p className={`text-xs md:text-lg `}>SUBSCRIBE</p>
+          </div>
         </div>
       </form>
     </div>
