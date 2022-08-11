@@ -40,7 +40,7 @@ function MobileNav({ open, setOpen }: any) {
 }
 
 export default function Navbar() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <nav
       className={` flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center ${
