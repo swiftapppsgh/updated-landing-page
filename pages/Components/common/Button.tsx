@@ -14,7 +14,7 @@ const Button = ({
   buttonColor,
   textColor = "text-white",
   hover,
-  href,
+  href = "/",
 }: Props) => {
   return (
     <Link href={href}>
