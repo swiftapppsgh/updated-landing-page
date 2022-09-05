@@ -45,7 +45,7 @@ const ImageText = () => {
                 </div>
                 <div className="flex flex-row w-full justify-end">
                     <img
-                        src="/image2.png"
+                        src="https://res.cloudinary.com/mest-kitchen-app/image/upload/v1662386649/image2_wrqjsw.png"
                         className="hidden w-full md:w-9/12 lg:w-9/12 md:block"
                     ></img>
                 </div>
@@ -88,7 +88,7 @@ const ImageText = () => {
                 </div>
                 <div className="flex flex-row w-full justify-end">
                     <img
-                        src="/image4.png"
+                        src="https://res.cloudinary.com/mest-kitchen-app/image/upload/v1662386650/image4_a5tlom.png"
                         className="hidden w-full md:w-9/12 lg:w-9/12 md:block"
                     ></img>
                 </div>
