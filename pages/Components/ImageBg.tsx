@@ -15,7 +15,7 @@ const ImageBg: NextPage = () => {
                 // }}
             >
                 <img
-                    src="/backgroundmobile.png"
+                    src="https://res.cloudinary.com/mest-kitchen-app/image/upload/v1662386650/backgroundmobile_xe1dz6.png"
                     className="block w-full md:hidden"
                 />
                 <AddRoute
