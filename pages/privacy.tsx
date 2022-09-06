@@ -1,5 +1,5 @@
 import Footer from "./Components/Footer";
-import Header from "./Components/header";
+import Header from "./Components/Header";
 
 const PrivacyPage = () => {
   return (

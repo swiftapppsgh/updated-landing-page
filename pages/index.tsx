@@ -4,7 +4,7 @@ import Image from "next/image";
 import BecomeAPartner from "./Components/BecomeAPartner";
 import DownloadApp from "./Components/DownloadApp";
 import Footer from "./Components/Footer";
-import Header from "./Components/header";
+import Header from "./Components/Header";
 import ImageBg from "./Components/ImageBg";
 import ImageText from "./Components/ImageText";
 import Offerings from "./Components/Offerings";
