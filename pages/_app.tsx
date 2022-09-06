@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             />
             <meta
                 name="keywords"
-                content="trober travel transport trotro ridesharing ghana minibus trasportation comfort ride convenience timely public transport shared mobility carbon offset projects in ghana africa west africa sub suhara africa"
+                content="trober travel transport trotro ridesharing ghana minibus trasportation comfort ride convenience timely public transport shared mobility carbon offset projects in ghana africa west africa sub suhara africa trober"
             />
             <meta property="og:locale" content="en_US" />
             <meta httpEquiv="X-UA-Compatible" content="IE=7" />
@@ -28,10 +28,13 @@ function MyApp({ Component, pageProps }: AppProps) {
                 content="Trober - The new way to get to work"
             />
             <meta property="og:site_name" content="Trober Ghana" />
-            <meta property="og:url" content="https://www.troberapp.com" />
+            <meta
+                property="og:url"
+                content="https://troberlandingpage.netlify.app"
+            />
             <meta
                 property="og:image"
-                content="https://www.troberapp.com/trober.ico"
+                content="https://troberlandingpage.netlify.app/trober.ico"
             />
             <Component {...pageProps} />
         </Head>
