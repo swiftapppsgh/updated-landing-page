@@ -5,7 +5,7 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <Head>
-            <title>Trober - The new way to get to work</title>
+            {/* <title>Trober - The new way to get to work</title>
             <meta charSet="UTF-8" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <meta
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <meta
                 property="og:image"
                 content="https://troberlandingpage.netlify.app/trober.ico"
-            />
+            /> */}
             <Component {...pageProps} />
         </Head>
     );
