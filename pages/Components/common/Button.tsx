@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Link from "next/link";
+import TroberLogger from "../../../utils/logEvent";
 
 interface Props {
     buttonText: String;
@@ -7,6 +8,8 @@ interface Props {
     textColor: String;
     hover: boolean;
     href: string;
+    target: string;
+    purpose: string;
 }
 
 const Button = ({
@@ -15,11 +18,16 @@ const Button = ({
     textColor = "text-white",
     hover,
     href = "/",
+    target,
+    purpose,
 }: Props) => {
     return (
         <Link href={href}>
             <a
-                target={"_blank"}
+                onClick={() => {
+                    TroberLogger(purpose, {});
+                }}
+                target={target}
                 className={`px-6 py-3 ${buttonColor} justify-center text-center m-4 rounded-lg md:px-16
       ${
           hover && "hover:bg-darkblueopacity hover:text-primary"

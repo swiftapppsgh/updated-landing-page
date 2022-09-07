@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import Button from "./common/Button";
 import Head from "next/head";
+import TroberLogger from "../../utils/logEvent";
 
 function NavLink({ to, children }: any) {
     return (
@@ -15,7 +16,6 @@ function NavLink({ to, children }: any) {
 }
 
 function MobileNav({ open, setOpen }: any) {
-    console.log(open, setOpen);
     return (
         <div
             className={`absolute md:hidden z-50 top-0 right-0 w-screen bg-white transform ${
@@ -36,18 +36,22 @@ function MobileNav({ open, setOpen }: any) {
             </div>
             <div className=" flex-row justify-center flex ">
                 <Button
+                    target=""
                     buttonText="Join Our Waitlist"
                     buttonColor={"bg-primary"}
                     textColor={"text-white"}
                     hover={false}
                     href="/waitlist"
+                    purpose="waitlist"
                 />
                 <Button
+                    target="_blank"
                     buttonText="Rent a Vehicle"
                     buttonColor={"bg-darkblueopacity"}
                     textColor={"text-primary"}
                     hover={false}
                     href="https://forms.zohopublic.com/trober/form/ProductEnquiry/formperma/N0z4WebLo3RPAXrd_uFYNFnYxz1Kg_8DAwVbIVfxk1g"
+                    purpose="RentAVehicle"
                 />
             </div>
         </div>
@@ -62,7 +66,7 @@ export default function Navbar() {
                 <title>Trober - The new way to get to work</title>
                 <link rel="shortcut icon" href="/trober.ico" />
                 <meta charSet="UTF-8" />
-                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
                 <meta
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
@@ -111,18 +115,22 @@ export default function Navbar() {
                 <div className="w-9/12 flex justify-end items-center">
                     <div className=" flex-row justify-center hidden md:flex">
                         <Button
+                            target="_blank"
                             buttonText="Rent a Vehicle"
                             buttonColor={"bg-darkblueopacity"}
                             textColor={"text-primary"}
                             hover={false}
                             href="https://forms.zohopublic.com/trober/form/ProductEnquiry/formperma/N0z4WebLo3RPAXrd_uFYNFnYxz1Kg_8DAwVbIVfxk1g"
+                            purpose="RentAVehicle"
                         />
                         <Button
+                            target=""
                             buttonText="Join Our Waitlist"
                             buttonColor={"bg-primary"}
                             textColor={"text-white"}
                             hover={false}
                             href="/waitlist"
+                            purpose="waitlist"
                         />
                     </div>
                 </div>

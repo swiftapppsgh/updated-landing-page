@@ -1,17 +1,18 @@
 import { ChangeEventHandler } from "react";
 
 interface Props {
-  type: string;
-  placeHolder: string;
-  onChange: ChangeEventHandler;
+    type: string;
+    placeHolder: string;
+    value: string;
+    onChange: Function;
 }
 
-const InputField = ({ type, onChange, placeHolder }: Props) => {
-  return (
-    <div className="form-group mb-6">
-      <input
-        type={type}
-        className="form-control block
+const InputField = ({ type, onChange, placeHolder, value }: Props) => {
+    return (
+        <div className="form-group mb-6">
+            <input
+                type={type}
+                className="form-control block
           w-full
           px-16
           py-3
@@ -25,12 +26,13 @@ const InputField = ({ type, onChange, placeHolder }: Props) => {
           ease-in-out
           m-0
           focus:text-black focus:bg-darkblueopacity focus:border-primary focus:outline-none"
-        id="exampleInput91"
-        placeholder={placeHolder}
-        onChange={onChange}
-      />
-    </div>
-  );
+                id="exampleInput91"
+                placeholder={placeHolder}
+                value={value}
+                onChange={({ target }) => onChange(target.value)}
+            />
+        </div>
+    );
 };
 
 export default InputField;

@@ -16,6 +16,7 @@ module.exports = {
             darkgray: "#808286",
             darkblueopacity: "#2D194E10",
             purple: "#5C1D62",
+            danger: "#ff0000",
         },
         extend: {
             backgroundImage: {
