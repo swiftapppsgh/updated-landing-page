@@ -15,7 +15,7 @@ function NavLink({ to, children }: any) {
     );
 }
 
-function MobileNav({ open, setOpen }: any) {
+function MobileNav({ open, setOpen, waitlist }: any) {
     return (
         <div
             className={`absolute md:hidden z-50 top-0 right-0 w-screen bg-white transform ${
@@ -35,15 +35,17 @@ function MobileNav({ open, setOpen }: any) {
                 </Link>
             </div>
             <div className=" flex-row justify-center flex ">
-                <Button
-                    target=""
-                    buttonText="Join Our Waitlist"
-                    buttonColor={"bg-primary"}
-                    textColor={"text-white"}
-                    hover={false}
-                    href="/waitlist"
-                    purpose="waitlist"
-                />
+                {!waitlist && (
+                    <Button
+                        target=""
+                        buttonText="Join Our Waitlist"
+                        buttonColor={"bg-primary"}
+                        textColor={"text-white"}
+                        hover={false}
+                        href="/waitlist"
+                        purpose="waitlist"
+                    />
+                )}
                 <Button
                     target="_blank"
                     buttonText="Rent a Vehicle"
@@ -58,7 +60,11 @@ function MobileNav({ open, setOpen }: any) {
     );
 }
 
-export default function Navbar() {
+interface navBarProps {
+    waitlist: boolean;
+}
+
+export default function Navbar({ waitlist }: navBarProps) {
     const [open, setOpen] = useState(true);
     return (
         <div>
@@ -101,7 +107,7 @@ export default function Navbar() {
                     open && " mb-16 md:mb-0"
                 }`}
             >
-                <MobileNav open={open} setOpen={setOpen} />
+                <MobileNav open={open} setOpen={setOpen} waitlist={waitlist} />
                 <div className="w-3/12 flex items-center">
                     <Link href="/">
                         <a>
@@ -123,15 +129,17 @@ export default function Navbar() {
                             href="https://forms.zohopublic.com/trober/form/ProductEnquiry/formperma/N0z4WebLo3RPAXrd_uFYNFnYxz1Kg_8DAwVbIVfxk1g"
                             purpose="RentAVehicle"
                         />
-                        <Button
-                            target=""
-                            buttonText="Join Our Waitlist"
-                            buttonColor={"bg-primary"}
-                            textColor={"text-white"}
-                            hover={false}
-                            href="/waitlist"
-                            purpose="waitlist"
-                        />
+                        {!waitlist && (
+                            <Button
+                                target=""
+                                buttonText="Join Our Waitlist"
+                                buttonColor={"bg-primary"}
+                                textColor={"text-white"}
+                                hover={false}
+                                href="/waitlist"
+                                purpose="waitlist"
+                            />
+                        )}
                     </div>
                 </div>
             </nav>

@@ -24,10 +24,10 @@ const Button = ({
     return (
         <Link href={href}>
             <a
+                target={target}
                 onClick={() => {
                     TroberLogger(purpose, {});
                 }}
-                target={target}
                 className={`px-6 py-3 ${buttonColor} justify-center text-center m-4 rounded-lg md:px-16
       ${
           hover && "hover:bg-darkblueopacity hover:text-primary"

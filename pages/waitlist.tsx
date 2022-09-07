@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     }, []);
     return (
         <div className=" h-full">
-            <Header />
+            <Header waitlist={true} />
             <WaitlistForm />
             <Footer />
         </div>

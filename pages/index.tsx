@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     }, []);
     return (
         <div className="">
-            <Header />
+            <Header waitlist={false} />
             <ImageBg />
             <ImageText />
             <Offerings />
